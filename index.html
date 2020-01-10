@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--link bootstrap and css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>InterractiveForm</title>
+    
+</head>
+<body>
+    <div class="main-form">
+        <div class="header-form">
+            <h3>Inscription</h3>
+        </div>
+        <div class="form-add">
+            <form action="">
+                <div>
+                    <p>Sexe</p>
+                    <div>
+                        <input type="radio" id="masculin" name="sexe" class="masculin">
+                        <label for="masculin">Masculin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="feminin" name="sexe" class="masculin">
+                        <label for="feminin">Feminin</label>
+                    </div>
+                    <span class="error-message fem"></span>
+                </div>
+                <div class="group-input">
+                    <input type="text" placeholder="Nom" class="nom">
+                    <span class="error-message"></span>
+                </div>
+                <div class="group-input">
+                    <input type="text" placeholder="Prenoms" class="prenom">
+                    <span class="error-message">Votre prénom doit contenir plus de 2 caractères</span>
+                </div>
+                <div class="group-input">
+                    <input type="number" placeholder="Age" class="age">
+                    <span class="error-message"></span>
+                </div>
+                <div class="group-input">
+                    <input type="text" placeholder="Pseudo" class="pseudo">
+                    <p class="error-message"></p>
+                </div>
+                <div class="group-input">
+                    <input type="password" placeholder="Mot de passe" class="password1">
+                    <span class="error-message"></span>
+                </div>
+                <div class="group-input">
+                    <input type="password" placeholder="Confirmer votre mot de passe" class="password2">
+                    <span class="error-message">Vos deux mots de passe sont differents</span>
+                </div>
+                <div class="group-input">
+                    <label for="country">Pays:</label>
+                    <select name="" id="country">
+                        <option value="CI">Côte d'Ivoire</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                    </select>
+                    <span class="error-message">Un pays doit etre selectionner</span>
+                </div>
+                <div>
+                    <label for="maymail">Souhaiter vous reçevoir des e-mails ?</label>
+                    <input type="checkbox" id="maymail">
+                </div>
+                <button type="submit" class="submit">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+    <!--link jquery-->
+    <script src="js/jquery.js"></script>
+    <!--link js-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

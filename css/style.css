@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Ma+Shan+Zheng&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    padding: 1rem;
+    /* font-family: 'Courier Prime', monospace; */
+    font-family: 'Ma Shan Zheng', cursive;
+    background: url('../images/dubai_from_the_sky.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.main-form{
+    width: 40%;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.616);
+    background: rgba(0, 0, 0, 0.829);
+    border-bottom-right-radius: 7rem;
+    /* clip-path: polygon(75% 0, 100% 25%, 100% 100%, 11% 100%, 0 92%, 0 0); */
+}
+
+.header-form{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.486),rgba(0, 0, 0, 0.486)),url('../images/bg-01.jpg') center no-repeat;
+    background-size: cover;
+    border: none;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 3px;
+    margin-left: -2rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.header-form h3{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
+}
+
+.form-add{
+    padding-top:1rem;
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.form-add .group-input p{
+    margin-bottom: .2rem;
+}
+
+.form-add .group-input{
+    margin-bottom: 1.5rem;
+}
+
+.form-add .group-input input, .form-add .group-input select{
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    outline: none;
+    color: rgb(17, 17, 17);
+    border-radius: 3px;
+    box-shadow: 0 0 3px #fff;
+    transition: all .4s;
+}
+
+.form-add .group-input input:focus, .form-add .group-input select:focus{
+    box-shadow: 0 0 7px #fff;
+    width: 105%;
+}
+
+.form-add button{
+    cursor: pointer;
+    padding: .5rem;
+    border:none;
+    background: #000;
+    color: #fff;
+    transition: all .5s;
+    border: 1px solid white;
+}
+
+.form-add button:focus{
+    outline: none;
+}
+
+.form-add button:hover{
+    background: #fff;
+    color: #000;
+    /* width: 50%; */
+}
+
+.error-message{
+    color: rgb(228, 0, 0);
+}
+
+.error, .error:focus{
+    box-shadow: 0 0 10px rgb(228, 0, 0) !important;
+}
+
+.success, .success:focus{
+    box-shadow: 0 0 10px rgb(0, 194, 0) !important;
+}
+
+@media screen and (max-width:740px){
+    .main-form{
+        width: 95%;
+    }
+}
+
