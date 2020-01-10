@@ -1,5 +1,4 @@
 var form = selectEl('form')
-var button = selectEl('.submit')
 
 var errMsg = document.querySelectorAll('.error-message')
 
@@ -28,12 +27,8 @@ var inputsData = {
     // },
 }
 
-// console.log(inputsName.errorMessage)
-// console.log(inputsName.nom.nextElementSibling)
-// console.log(inputsName.emptyInput.test(inputsName.nom.value))
 
 inputsData.nom.addEventListener('keyup',()=>{
-    // console.log(inputsData.nom.value.match(inputsData.emptyInput))
     if(inputsData.nom.value.length <= 2 || inputsData.nom.value.match(inputsData.emptyInput) == null){
         inputsData.nom.nextElementSibling.innerHTML = 'Votre nom doit contenir plus de 2 caractères'
         inputsData.nom.nextElementSibling.style.display = 'inline-block'
@@ -85,7 +80,6 @@ inputsData.age.addEventListener('keyup',()=>{
 })
 
 inputsData.pseudo.addEventListener('keyup',()=>{
-    // console.log(inputsData.nom.value.match(inputsData.emptyInput))
     if(inputsData.pseudo.value.length <= 4 || inputsData.pseudo.value.match(inputsData.emptyInput) == null){
         inputsData.pseudo.nextElementSibling.innerHTML = 'Votre Pseudo doit contenir plus de 4 caractères'
         inputsData.pseudo.nextElementSibling.style.display = 'inline-block'
@@ -102,7 +96,6 @@ inputsData.pseudo.addEventListener('keyup',()=>{
 })
 
 inputsData.password1.addEventListener('keyup',()=>{
-    // console.log(inputsData.nom.value.match(inputsData.emptyInput))
     if(inputsData.password1.value.length <= 6 || inputsData.password1.value.match(inputsData.emptyInput) == null){
         inputsData.password1.nextElementSibling.innerHTML = 'Votre Mot de passe doit contenir plus de 6 caractères'
         inputsData.password1.nextElementSibling.style.display = 'inline-block'
@@ -136,7 +129,6 @@ inputsData.password2.addEventListener('keyup',()=>{
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
-    // console.log(inputsData.nom.value)
 })
 
 
